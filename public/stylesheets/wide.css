@@ -1,0 +1,34 @@
+body{
+	background: #999;
+}
+
+#container{
+	content: "Wide Layout";
+}
+
+main{
+	margin: 0 auto;
+
+	*width: 802px;
+	*text-align: center;
+}
+
+nav,section{
+	display: inline-block;
+	height: 200px;
+	vertical-align: top;
+}
+
+nav{
+	width: 15%;
+}
+
+nav span{
+	margin:0px 100px 0px 0px;
+}
+
+section{
+	background: #eee;
+	width: 80%;
+	*margin:0 2%;
+}

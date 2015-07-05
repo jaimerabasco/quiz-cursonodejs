@@ -1,0 +1,17 @@
+body{
+	background: #333;
+	font-size: xx-large;
+}
+
+#container{
+	content: "Smartphone Layout";
+}
+
+h2, span, section, h3 {
+
+}
+
+footer{
+	font-size: large;
+}
+
