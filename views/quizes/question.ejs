@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Quiz - Preguntas</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h2>Quiz, el juego de las preguntas</h2>
-    <form method="get" action="/quizes/answer">
-    	Pregunta: <%= pregunta %>
-    	<p>
-    		<input type="text" name="respuesta" value="Responde aquí">
-    		<input type="submit" value="Enviar">
-    	</p>
-    </form>
-  </body>
-</html>
+<h2>Quiz, el juego de las preguntas</h2>
+<form method="get" action="/quizes/answer">
+	Pregunta: <%= pregunta %>
+	<p>
+		<input type="text" name="respuesta" value="Responde aquí">
+		<input type="submit" value="Enviar">
+	</p>
+</form>
