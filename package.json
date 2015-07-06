@@ -17,10 +17,6 @@
     "morgan": "~1.5.3",
     "serve-favicon": "~2.2.1"
   },
-  "engines": {
-    "node": "0.12.6",
-    "npm": "2.11.2",
-  },
   "description": "App curso nodejs",
   "main": "app.js",
   "devDependencies": {},
