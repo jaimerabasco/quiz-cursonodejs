@@ -86,7 +86,7 @@ exports.edit = function(req,res){
 }
 
 
-//PUT quizes/::id
+//PUT quizes/:id
 exports.update = function(req,res){
 	req.quiz.pregunta = req.body.quiz.pregunta;
 	req.quiz.respuesta = req.body.quiz.prespuesta;
@@ -107,5 +107,16 @@ exports.update = function(req,res){
 				)}
 			})
 }
+
+
+//DELETE quizes/:id
+exports.destroy = function(req, res){
+	req.quiz.destroy().then(function(){
+		res.redirect('/quizes');
+	}).catch(function(error){next(error);});
+};
+
+
+
 
 
