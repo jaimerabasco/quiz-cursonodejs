@@ -6,16 +6,22 @@ body {
 	font-family:'Open Sans', sans-serif;
 	font-size: 16px;
 }
-#container{
-	color: white;
-	margin: auto 2%;	
-}
 
 .caja{
 	border:1px solid #999;
 	color:black;	
 	margin-bottom:1px;
 	padding: 1%;
+}
+
+.categoria{
+	font-size: 12px;
+	color: green;
+}
+
+#container{
+	color: white;
+	margin: auto 2%;	
 }
 
 #ErrorMsgs{
