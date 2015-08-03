@@ -37,6 +37,20 @@ app.use(function(req,res,next){
   next();
 });
 
+// //tiempo de sesion
+app.use(function(req, res, next) {
+  if (req.session.user) {
+    if (Date.now() - req.session.user.lastRequestTime > 120000) {
+      delete req.session.user;
+    } else {
+      req.session.user.lastRequestTime = Date.now();
+    }
+  }
+next();
+});
+
+
+
 
 app.use('/', routes);
 
