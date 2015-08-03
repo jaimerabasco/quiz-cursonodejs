@@ -7,3 +7,11 @@
 		<label class="categoria">Categoria: <%= quiz.categoria %></label>
 	
 </form>
+
+<p>
+	<a href="/quizes/<%= quiz.id %>/comments/new"><button>Nuevo comentario</button></a>
+</p>
+<p><strong>Comentario:</strong></p>
+<% for(index in quiz.Comments){ %>
+	<p> - <%= quiz.Comments[index].texto %></p>
+<% } %>	
